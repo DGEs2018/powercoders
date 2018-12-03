@@ -1,6 +1,6 @@
-em{
+p em{
   font-style: normal;
-  text-decoration: underline;  
+  text-decoration: underline;
 }
 p#footer {
   border-top:1px solid black;
