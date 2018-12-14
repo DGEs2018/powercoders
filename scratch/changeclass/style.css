@@ -8,8 +8,8 @@
 .warning { background: rgb(192, 0, 0); }
 
 .warning::before { content: "WARNING: "; }
-
 .tip { background: rgb(0, 192, 0); }
+
 
 .tip::before { content: "TIP: "; }
 
