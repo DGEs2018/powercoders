@@ -10,15 +10,15 @@ function setClass(className) {
 }
 
 document.addEventListener('DOMContentLoaded', function(event) {
-  let makeWarning = document.getElementById('make-warning');
-  makeWarning.addEventListener('click', function(event){
+  // let makeWarning = document.getElementById('make-warning');
+    document.getElementById('make-warning').addEventListener('click', function(event){
    setClass('warning');
  });
-  let makeTip = addEventListener('DOMContentLoaded', 'make-tip' );
+  let makeTip = document.getElementById('make-tip');
   makeTip.addEventListener('click', function(event) {
       setClass('tip');
  });
-  let makeNormal = addEventListener('DOMContentLoaded', 'make-normal');
+  let makeNormal = document.getElementById('make-normal');
   ClearClass.addEventListener('click', function(event) {
       setClass('');
  });
