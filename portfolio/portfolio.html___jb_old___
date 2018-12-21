@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> CV Dawit G.</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link rel="stylesheet" href="portfolio-s.css" media="screen and (min-width: 350px)">
+    <link rel="stylesheet" href="portfolio-m.css" media="screen and (min-width: 600px)">
+    <!-- <link rel="stylesheet" href="portfolio-la.css" media="screen and min-width: 900px"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <div id="col-1">
+      <h2>Lebenslauf</h2>
+      <div id="photo">
+        <img src="Dawit_Ghebremedhin.png" alt="myphoto">
+      </div>
+
+      <div id="details">
+        <p><span>Dawit Ghebremedhin</span></p>
+        <p>Vor- und Nachname:  Dawit Ghebremedhin</p>
+        <p>Adresse:    Wagnerstrasse <span class="date">21, 3007</span> Bern</p>
+        <p>Telefon:    <span class="date">+41 77 960 22 33</span></p>
+        <p>E-Mail:    dgeo209@gmail.com</p>
+        <p>Geburtsdatum:    <span class="date">24.12.1981</span></p>
+        <p>Familienstand:    ledig</p>
+        <p>Aufenthaltsstatus:  Aufenthaltsbewilligung B</p>
+        <p>Nationalität:    Eritreer</p>
+        <p>Github Profile <a href="https://github.com/DGEs2018">https://github.com/DGEs2018</a></p>
+      </div>
+    </div>
+
+    <div id="educational">
+    <h3>Ausbildung</h3>
+      <!-- <div id="ausbildungsjahre">
+        <p><span class="date">09.2014 - 06.2017</span></p>
+        <p><span class="date">09.1999 – 10.2003</span></p>
+        <p><span class="date">08.2012 – 09.2014</span></p>
+      </div>
+
+      <div id="ausbildungstyp">
+        <p>Masterabschluss in Erdwissenschaften, Universität Bern, Schweiz<br>
+          Schwerpunkt: Umwelt- und Rohstoffgeochemie (ERG)<br>
+          Titel der Masterarbeit: <strong>Origin and fate of acidic surface waters: a case study from the Engadin Valley</strong>
+        </p>
+        <p>Deutschkurse beim Lernpunkt und an der VHS Bern</p>
+        <p>Bachelorabschluss in Geologie, University of Asmara<br>
+        Metamorphic mapping of Adi-Abeito Area</p>
+        </div> -->
+        <table>
+          <tr>
+            <td><span class="date">09.2014 - 06.2017</span></td>
+            <td>Masterabschluss in Erdwissenschaften, Universität Bern, Schweiz<br>
+               Schwerpunkt: Umwelt- und Rohstoffgeochemie (ERG)<br>
+               Titel der Masterarbeit: <strong>Origin and fate of acidic surface waters: a case study from the Engadin Valley </strong></td>
+          </tr>
+          <tr>
+            <td><span class="date">08.2012 – 09.2014</span></td>
+            <td>Deutschkurse beim Lernpunkt und an der VHS Bern</td>
+          </tr>
+          <tr>
+            <td><span class="date">09.1999 – 10.2003</span></td>
+            <td>Bachelorabschluss in Geologie, University of Asmara
+            <br>Metamorphic mapping of Adi-Abeito Area</td>
+          </tr>
+        </table>
+    </div>
+
+    <div id="experiences">
+      <h3>Berufserfahrung</h3>
+      <p><span class="date">11.2018 - 03.2019 : </span>   Ausbildung zur Web-Programmierung mit Powercoders in Basel</p>
+      <p><span class="date">07.2018 - 10.2018 : </span>   Arbeitsuchend</p>
+      <p><span class="date">02.2018 – 07.2018 : </span>   Praktikant bei GEOCOM Informatik AG, Burgdorf, Schweiz</p>
+      <p> GIS-Desktop  Vertiefung & fundierte Grundkenntnisse der GEONIS Fachschalen, Mithilfe abteilungsübergreifender Datenaufbereitung bzw. <br> beim Kundenproblemen im Support</p>
+      <p><span class="date">10.2003 – 12.2010 : </span>Geologe bei Ministry of Energy and Mines, Department of Mines, Asmara, Eritrea (100%)</p>
+      <p>Zusammenstellen der vorigen geologischen Karten bzw. Berichte unterschiedlicher Erz-Exploration-Unternehmen</p>
+      <p>(Ergänzende Angaben - <em>als entsandter Mitarbeiter vom Department of Mines)</em>
+        <br><span class="date">05.2010 – 12.2010 : </span>Geologe bei Chalice Gold Ltd., Zara Projekt, Eritrea</p>
+      <p>Detailierte geologische Kartierungen, Mitarbeit bei Strukturgeologischen- u. Alterationszonenkartierung sowie Kartierung von Quarzadern,<br> Entnahme von Boden-, Bulk Leach Extractable Gold (BLEG) und Gesteinsproben</p>
+      <p>Prospektierung weiterer neu-identifizierten Gebiete (westliches Gebiet des Golduntersuchungsprogramms) mit</p>
+      <p>Explorationspotenzial sowie Sediment-Probennahme zur BLEG-Auswertung.</p>
+      <p><span>11.2009 – 04.2010</span> : Geologe bei Chalice Gold Ltd., Zara Projekt, Eritrea</p>
+      <p>Geologische und strukturelle Untersuchung von Bohrkernen eines Infill-Bohrungsprogramms</p>
+      <p><span class="date">11.2009 – 11.2009 : </span>    Geologe bei London Africa Ltd., Melih Prospekt, Eritrea</p>
+      <p><span class="date">02.2009 - 06.2009 : </span>    Geologe bei Sunridge Gold Corp., Asmara Projekt, Eritrea</p>
+    </div>
+
+    <div id="it-skills">
+    <h3>Informatikkenntnisse</h3>
+      <div id="it">
+        <p>MS-Office-Paket </p>
+        <p>Fachspezifische Softwares-GIS-Desktop </p>
+        <p>GEONIS(Expert & Wasser) </p>
+        <p>XML  </p>
+        <p>MapInfo</p>
+        <p>Move</p>
+        <p>Phreeqc</p>
+        <p>HighScore Plus</p>
+        <p>R- und Python Programmiersprache</p>
+        <p>Grafische Software - Adobe Photoshop</p>
+      </div>
+
+      <div id="level">
+        <p>Gute Kenntnisse</p>
+        <p>Gute Kenntnisse</p>
+        <p>Gute Kenntnisse</p>
+        <p>Basis Kenntnisse</p>
+        <p>Gute Kenntnisse</p>
+        <p>Grundkenntnisse</p>
+        <p>Gute Kenntnisse</p>
+        <p>Gute Kenntnisse</p>
+        <p>Grundkenntnisse</p>
+        <p>Grundkenntnisse</p>
+      </div>
+    </div>
+
+    <div id="col-2">
+      <div id="other-activities">
+      <h3>Außerberufliche Tätigkeiten</h3>
+        <ul>
+          <li><span class="date">07.2017 – 01.2018 : </span>Arbeitsuchend</li>
+          <li><span class="date">2016 : </span>Gelegentliche Einsätze als Aushilfskraft u.a. im Restaurant</li>
+          <li>Sprachenverbesserungen</li>
+          <li>Online-Programmiersprachenlernen</li>
+          <li>Tigrinya-Deutsch Übersetzer</li>
+          <li>Gelegentliche Einsätze als Tigrinya-Deutsch Übersetzer</li>
+        </ul>
+      </div>
+
+      <div id="lang-plus-level">
+      <h3>Sprachen</h3>
+        <ul>
+          <li>Tigrinya + Amharisch <span class="lang">Muttersprache</span></li>
+          <li>Deutsch/ Schweizerdeutsch <span class="lang">B2/C1</span></li>
+          <li>Französisch <span class="lang">B2</span></li>
+          <li>Englisch <span class="lang">C1</span></li>
+          <li>Italienisch <span class="lang">B1</span></li>
+        </ul>
+        </div>
+    </div>
+
+    <div id="hobbies">
+     <h3>Hobbys</h3>
+     Sprachlernen, Tischtennis, Fussball, Schwimmen &amp; Spaziergang
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+#col-1 {
+  position: relative;
+  min-height:30em;
+}
+
+#details, #photo {
+  position: absolute;
+}
+
+#photo {
+  right:0.5em;
+  top:8em;
+}
+
+#col-2 {
+  position: relative;
+  min-height: 18em;
+}
+
+#more-activities {
+  left: 0.5em;
+  position: absolute;
+  width: 60%;
+}
+
+#lang-plus-level {
+  right: 0.5em;
+  position: absolute;
+  width: 35%;
+}
+
+#it-skills {
+  position: relative;
+  min-height: 25em;
+}
+
+#it {
+  position: absolute;
+  width: 50%;
+}
+
+#level {
+  position: absolute;
+  width: 30%;
+  right: 0.5em;
+}

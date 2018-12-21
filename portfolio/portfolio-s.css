@@ -1,8 +1,12 @@
 body {
   position: relative;
-  font-family: sans-serif;
+  font-family: 'Karla', sans-serif;
   font-size: 16px;
   margin:1em 1em;
+}
+
+.sirname{
+  font-size: 32px;
 }
 
 #ausbildungsjahre, #ausbildungstyp {
@@ -11,5 +15,22 @@ body {
 
 table tr td:first-child {
   font-weight: bold;
-  width: 100px;
+  font-style: oblique;
+  width: 375px;
+}
+
+#it-skills {
+  position: relative;
+  min-height: 30em;
+}
+
+#it {
+  position: absolute;
+  width: 58%;
+}
+
+#level {
+  position: absolute;
+  width: 32%;
+  right: 0.5em;
 }

@@ -1,0 +1,127 @@
+body {
+  position: relative;
+  font-family: 'Karla', sans-serif;
+  font-size: 12px;
+  /* margin:5em 5em */
+  }
+/*
+h2, h3 {
+  padding: 15px 15px 10px;
+  border-radius: 3px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  background-color: lightgrey;
+  } */
+
+.lang {
+  font-style: oblique;
+  }
+
+.date {
+  font-style: italic;
+  }
+
+
+  body {
+    position: relative;
+    font-family: 'Karla', sans-serif;
+    font-size: 12px;
+    /* margin:5em 5em */
+    }
+
+  h2, h3 {
+    padding: 15px 15px 10px;
+    border-radius: 3px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    line-height: 1em;
+    }
+
+  .lang {
+    font-style: oblique;
+    }
+
+  .date {
+    font-style: italic;
+    font-weight: normal;
+    }
+
+  table.berufserfahrung td:first-child {
+    width : 150px;
+    font-style: italic;
+    font-weight: normal;
+    border-spacing: 100px 0;
+
+  }
+
+  #col-1 {
+    position: relative;
+    min-height:30em;
+    width: 100%;
+  }
+
+  #details {
+    position: absolute;
+    left: 1em;
+    width: 50%;
+  }
+
+  #photo {
+    position: absolute;
+    right: 0.5em;
+      top: 6em;
+    width: 30%;
+
+    /* right:0.5em;
+    top:4em; */
+
+  }
+
+
+  #it-skills {
+    position: relative;
+    min-height: 25em;
+  }
+
+  #it {
+    position: absolute;
+    width: 46%;
+  }
+
+  #level {
+    position: absolute;
+    width: 32%;
+    right: -0.875em;
+  }
+
+
+  div#educational {
+    width : 320px;
+    font-style: italic;
+    min-height: 12.5em;
+
+  }
+
+  div#hobbies {
+    position: relative;
+    top: -4em;
+  }
+
+  div#details {
+    text-indent: 1em each-line;
+  }
+
+table.it, td:first-child, table.berufserfahrung td:first-child {
+    width : 375px;
+    font-style: italic;
+    font-weight: normal;
+    border-spacing: 100px 0;
+}
+
+table.it, td:second-child {
+  width : 350px;
+}
+
+table#educational, td:second-child {
+  width: 320px;
+}

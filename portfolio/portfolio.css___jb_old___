@@ -1,0 +1,136 @@
+body {
+  position: relative;
+  font-family: 'Karla', sans-serif;
+  font-size: 12px;
+  /* margin:5em 5em */
+  }
+
+h2, h3 {
+  background-color: lightgrey;
+  padding: 15px 15px 10px;
+  border-radius: 3px;
+  }
+
+.lang {
+  font-style: oblique;
+  }
+
+.date {
+  font-style: italic;
+  }
+
+@media screen and (min-width: 350px) {
+  /* h1 {
+    padding: 30px 30px 20px;
+    font-family: sans-serif;
+    font-size: 50px;
+    line-height: 44px;
+  } */
+
+  #col-1 {
+    width: 100%;
+  }
+
+  #details {
+    width: 65%;
+    float: left;
+  }
+
+  #photo {
+    width: 35%;
+    float: right;
+  }
+
+  #educational {
+    width: 100%;
+  }
+
+  #experiences {
+    width: 100%;
+  }
+
+  #col-2 {
+    width: 100%;
+  }
+
+  /* #other-activities {
+    width: 55%;
+  }
+
+  #lang-plus-level {
+    width: 45%;
+  } */
+
+  #it-skills {
+    width: 100%;
+  }
+
+  #it {
+    width: 50%;
+  }
+
+  #level {
+    width: 50%;
+  }
+
+  #hobbies {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* h1 {
+    padding: 30px 30px 20px;
+    font-family: sans-serif;
+    font-size: 50px;
+    line-height: 44px;
+  } */
+
+  #col-1 {
+    width: 100%;
+  }
+
+  /* #details {
+    width: 40%;
+  }
+
+  #photo {
+    width: 40%;
+  } */
+
+  #educational {
+    width: 100%;
+  }
+
+  #experiences {
+    width: 100%;
+  }
+/*
+  #col-2 {
+    width: 100%;
+  }
+
+  #other-activities {
+    width: 50%;
+  }
+
+  #lang-plus-level {
+    width: 50%;
+  } */
+
+  #it-skills {
+    width: 100%;
+  }
+
+  #it {
+    width: 50%;
+  }
+
+  #level {
+    width: 50%;
+  }
+
+  #hobbies {
+    width: 100%;
+  }
+}

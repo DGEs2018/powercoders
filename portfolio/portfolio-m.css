@@ -1,15 +1,34 @@
-#col-1 {
+h2, h3 {
+  padding: 15px 15px 10px;
+  border-radius: 3px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  line-height: 0;
+  }
+
+  #col-1 {
   position: relative;
   min-height:30em;
+  width: 100%;
 }
 
-#details, #photo {
+#details {
   position: absolute;
+  left: 1em;
+  width: 50%;
 }
 
 #photo {
-  right:0.5em;
-  top:8em;
+  position: absolute;
+  right: 0.5em;
+    top: 6em;
+  width: 30%;
+  /* right:0.5em;
+  top:4em; */
+}
+
+table#educational, td:second-child {
+  width: 320px;
 }
 
 #col-2 {
@@ -17,16 +36,28 @@
   min-height: 18em;
 }
 
-#more-activities {
-  left: 0.5em;
-  position: absolute;
-  width: 60%;
+/*!*#more-activities {*!*/
+  /*!*left: 0.5em;*!*/
+  /*!*position: absolute;*!*/
+  /*!*width: 60%;*!*/
+/*}*/
+
+/*#lang-plus-level {*/
+  /*right: 0.5em;*/
+  /*position: absolute;*/
+  /*width: 35%;*/
+/*}*/
+
+#other-activities {
+  width: 45%;
+  position:absolute;
+  left: 0.1em;
 }
 
 #lang-plus-level {
-  right: 0.5em;
+  width: 50%;
   position: absolute;
-  width: 35%;
+  right: 1em;
 }
 
 #it-skills {
@@ -42,5 +73,39 @@
 #level {
   position: absolute;
   width: 30%;
-  right: 0.5em;
+  right: -0.875em;
 }
+
+
+  #col-1 {
+    width: 100%;
+  }
+
+
+  #educational {
+    width: 100%;
+  }
+
+  #experiences {
+    width: 100%;
+  }
+
+
+  #it-skills {
+    width: 100%;
+  }
+
+  #it {
+    width: 50%;
+  }
+
+  #level {
+    width: 50%;
+  }
+
+  #hobbies {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0.5em;
+  }
