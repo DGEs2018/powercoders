@@ -2,7 +2,7 @@ console.log('JS running test!');
 
 function paraReplicator(text) {
     let elP = document.createElement('p');
-    let pContent = document.createTextNode('Paragraph to be clicked!');
+    let pContent = document.createTextNode('Replicated paragraph!');
     elP.appendChild(pContent);
     let elBod = document.getElementById('z-body');
     elBod.appendChild(elP);
