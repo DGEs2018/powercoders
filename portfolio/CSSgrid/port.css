@@ -1,0 +1,17 @@
+/* #allcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+} */
+
+#firstdiv {
+  display: grid;
+  grid-auto-columns: 1fr 1fr 1fr;
+}
+p {
+  background: #eee;
+  padding: .5em;
+}
+
+/* #photo {
+
+} */
