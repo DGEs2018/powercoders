@@ -1,18 +1,18 @@
 .containerdiv {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
 }
 
-.edu .ex {
+.edu, .ex {
     grid-column: span 3 / auto;
 }
 
-.photo > img {
+/*.photo > img {
     max-width: 100%;
     height: auto;
 }
 
 table {
     max-width: 100%;
-}
+}*/
