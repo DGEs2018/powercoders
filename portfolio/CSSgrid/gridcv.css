@@ -1,0 +1,18 @@
+.containerdiv {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.edu .ex {
+    grid-column: span 3 / auto;
+}
+
+.photo > img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    max-width: 100%;
+}
