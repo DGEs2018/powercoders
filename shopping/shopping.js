@@ -1,28 +1,8 @@
-/*document.addEventListener('DOMContentLoaded', function(event) {
-    document.querySelector('button').addEventListener('click', function(event){
-        console.log('The button was clicked');
-        let inputVal = document.getElementById('item');
-        // alternative works with, let inputVal = document.querySelector('#item');
-        console.log(inputVal.value);
-
-    });
-});
-*/
-
-
 function createNewListItem(itemName) {
-  // create a li node
   let elli = document.createElement('li');
-  // create span node
   let elspan = document.createElement('span');
-  /*elspan.appendChild(spanCont);
-  let spanCont = document.createTextNode(itemName);*/
-  // span's innerText' property
   elspan.innerText = itemName;
-  /*elli.appendChild(elspan);*/
-  //create a button node
   let elbutton = document.createElement('button');
-  // button's .innerText' property
   elbutton.innerText = 'Delete';
 
   elbutton.addEventListener('click', function (event) {
@@ -46,23 +26,31 @@ function createNewListItem(itemName) {
 document.addEventListener('DOMContentLoaded', function (event) {
   let inputVal = document.getElementById('item');
   let shoppingList = document.querySelector('ul');
+  let addItemButton = document.querySelector('button');
+  document.querySelector('button').disabled = false;
 
   document.querySelector('button').addEventListener('click', function () {
     if (inputVal.value.trim() !== '') {
       shoppingList.appendChild(createNewListItem(inputVal.value.trim()));
       inputVal.value = '';
+      addItemButton.disabled = true;
     }
     inputVal.focus();
   });
 
   inputVal.addEventListener('keyup', function (event) {
-    if (event.key === 'Enter') {
-      if (inputVal.value.trim() !== '') {
+    if (inputVal.value.trim() !== '') {
+      addItemButton.disabled = false;
+      if (event.key === 'Enter') {
         shoppingList.appendChild(createNewListItem(inputVal.value.trim()));
         inputVal.value = '';
       }
     }
+
+    if (inputVal.value.trim() === '') {
+      addItemButton.disabled = true;
+    }
   });
   inputVal.focus();
-
+  addItemButton.disabled = true;
 });
