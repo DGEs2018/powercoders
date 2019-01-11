@@ -26,6 +26,7 @@ function createNewListItem(itemName) {
   elbutton.innerText = 'Delete';
 
   elbutton.addEventListener('click', function (event) {
+    document.getElementById('item').focus();
     console.log('The button was clicked: ' + itemName);
     elli.remove();
 
@@ -43,26 +44,25 @@ function createNewListItem(itemName) {
 };
 
 document.addEventListener('DOMContentLoaded', function (event) {
+  let inputVal = document.getElementById('item');
+  let shoppingList = document.querySelector('ul');
+
   document.querySelector('button').addEventListener('click', function () {
-    let inputVal = document.getElementById('item');
-    console.log(inputVal.value);
-    // call createNewListItem with the contents of the input widget and save the result in a variable
-    let elli = createNewListItem(inputVal.value);
-    //Use document.querySelector to find the ul element and save the result in a variable
-    let storVar2 = document.querySelector('ul');
-    //append the li element returned by createNewListItem to the ul element
-    storVar2.append(elli);
-  });
-
-  document.querySelector('input').addEventListener('keyup', function(event) {
-    if(event.key === 'Enter'){
-      let inputVal = document.getElementById('item');
-      let elli = createNewListItem(inputVal.value);
-      let storVar2 = document.querySelector('ul');
-      storVar2.append(elli);
-      // return event.key;
+    if (inputVal.value.trim() !== '') {
+      shoppingList.appendChild(createNewListItem(inputVal.value.trim()));
       inputVal.value = '';
-      }
-
+    }
+    inputVal.focus();
   });
+
+  inputVal.addEventListener('keyup', function (event) {
+    if (event.key === 'Enter') {
+      if (inputVal.value.trim() !== '') {
+        shoppingList.appendChild(createNewListItem(inputVal.value.trim()));
+        inputVal.value = '';
+      }
+    }
+  });
+  inputVal.focus();
+
 });
