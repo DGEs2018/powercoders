@@ -1,8 +1,8 @@
 function createNewListItem(itemName) {
-  let elli = document.createElement('li');
-  let elspan = document.createElement('span');
+  const elli = document.createElement('li');
+  const elspan = document.createElement('span');
   elspan.innerText = itemName;
-  let elbutton = document.createElement('button');
+  const elbutton = document.createElement('button');
   elbutton.innerText = 'Delete';
 
   elbutton.addEventListener('click', function (event) {
@@ -21,12 +21,12 @@ function createNewListItem(itemName) {
 
   // return the li node
   return elli;
-};
+}
 
 document.addEventListener('DOMContentLoaded', function (event) {
-  let inputVal = document.getElementById('item');
-  let shoppingList = document.querySelector('ul');
-  let addItemButton = document.querySelector('button');
+  const inputVal = document.getElementById('item');
+  const shoppingList = document.querySelector('ul');
+  const addItemButton = document.querySelector('button');
   document.querySelector('button').disabled = false;
 
   document.querySelector('button').addEventListener('click', function () {
