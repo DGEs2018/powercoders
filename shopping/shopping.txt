@@ -1,0 +1,106 @@
+Line 1 declares a function named `createNewListItem`. This function has one parameter called `itemName``.
+
+Line 2 calls the `createElement` method. It then passes a string parameter `li` to the method
+creating a new `li` element in the DOM. The new element is returned and stored in the constant variable called `elli`.
+
+Line 3 calls the `createElement` method. It then passes a string parameter `span` to the method, creating a new `span`
+element in the DOM. The new element is returned and stored as a constant variable called `elspan`.
+
+Line 4 calls the innerText property to attach the text `itemName` as a content between the element `span` stored as
+a constant variable `elspan`.
+
+Line 5 calls the createElement method. It then passes a single string parameter `button` to the method, creating a new
+`button` element in the DOM. This new element is returned and stored as a constant variable known as elbutton.
+
+Line 6 attaches / appends the innerText string `delete` between the constant variable `elbutton` defined on line 5.
+
+Line 8 calls the EventTarget addEventListener method on the DOM in a global document variable. When the `click` event is
+triggered, the function will be invoked.
+
+Line 9 sets focus using `.focus()` method to the input attribute returned by the `getElementById` on the DOM in global
+document variable matching the id `item`.
+
+Line 10 uses `console.log` to return the string 'the button was clicked' concatenated with the id `item`.
+
+Line 11 calls the `.remove()` method to remove the 'li' element stored in the variable `elli`.
+
+Line 14 appends / attaches the child 'elspan' to the 'li' element stored as the variable `elli`.
+
+Line 17 the curly bracket closes the body of the function createNewListItem on line 1.
+
+Line 19 calls the addEventListener method on the DOM in a global document variable. Once the HTML document is completely
+loaded, i.e.`DOMContentLoaded`, the event defined by the contained function will be fired / triggered.
+
+Line 20  calls the `getElementById` method on the DOM object in the global document variable. It then passes a single
+string elementId parameter,`item`. This is then returned and stored as a constant variable called `inputVal`.
+
+Line 21  calls the `querySelector` method on the DOM object in the global document variable that passes a single string
+selector parameter, matching the element `ul`. This is then returned and stored as a constant variable called `shoppingList`.
+
+Line 22  calls the `querySelector` method on the DOM object in the global
+document variable that passes a single string selector parameter, matching the element `button`.
+This is then returned and stored as a constant variable called `addItemButton`.
+
+Line 23 uses the `querySelector` method on the HTML DOM object in the global document variable that returns the specified
+element `button`. This returned element object is then set to boolean `.disabled = false` attribute meaning the button
+should still be clickable.
+
+Line 25 tells the browser using the addEventListener method to call the function specified on the click event
+
+Line 26 says if, `inputVal.value`, the input typed by the user, which is trimmed from both ends by the method,
+`.trim()`, is anything but / is not equal to empty value '',
+
+Line 27 then append the createNewListItem function, to which the trimmed ( from both ends get rid of white spaces,
+such as space, tab, no-break space etc.) inputVal.value.trim(); child is passed.
+
+Line 28 the value of the constant `inputVal` variable 'inputVal.value' is set to the empty strings
+
+Line 29 the constant `addItemButton` variable is set to the boolean attribute `disabled=true`, meaning this disables
+clicking of the button
+
+Line 30 the curly bracket closes the body of the if statement on line 26
+
+Line 31 the `.focus()` method sets focus on the constant `inputVal` variable declared on line 20
+
+Line 32 the parenthesis closes the EventTarget `addEventListener` method (on line 25), contained within the querySelector
+method on the DOM in the global document variable, while the curly bracket } inside closing the function called within the former
+
+Line 34 calls the `addEventListener` method on the DOM in a global document variable. This will be fired / triggered on
+the `keyup` event and calls the further defined function.
+
+Line35 if the condition, the trimmed inputVal.value, `inputVal.value.trim();`, is not equal to the empty string `''`
+evaluates to true then execute the line beneath (line 36).
+
+Line 36 the constant `addItemButton` variable is set to the boolean attribute `.disabled=false`, meaning this `addItemButton`
+is enabled.
+
+Line 37 if the statement, comparing the value as well as the type of `event.key` equals, i.e., '===', to the string
+'Enter', then line 38.
+
+Line 38 appends the `createNewListItem` function, which passes the inputVal.value parameter, stripped off white spaces
+to the constant variable `shoppingList`.
+
+Line 39 the value of the constant `inputVal` variable is set to an empty string ''.
+
+Line 40 the curly bracket closes the body of the if statement on line 37.
+
+Line 41 the curly bracket closes the body of the if statement on line 35.
+
+Line 43 if the condition the compares the value as well as the type of the trimmed inputVal.value, `inputVal.value.trim()`,
+is equal to the empty string '' evaluates to true then execute the line beneath (line 44).
+
+Line 44 the constant `addItemButton` variable is set to the boolean attribute `.disabled=true`, meaning the constant
+variable addItemButton is disabled / unclickable.
+
+Line 45 the curly bracket closes the body of the if statement on line 43.
+
+Line 46 the parenthesis closes the EventTarget addEventListener method (on line 34) delivered to the target constant
+variable inputVal, while the curly bracket } inside closing the function called within the former.
+
+Line 47 the `.focus()` method sets focus on the constant `inputVal` variable declared on line 20.
+
+Line 48 the constant `addItemButton` variable is set to the boolean attribute `disabled=true`, meaning this disables
+clicking of the button.
+
+Line 49 the parenthesis closes the EventTarget addEventListener method (on line 19) on the DOM in the global document variable,
+while the curly bracket } inside closing the function called within the former.
