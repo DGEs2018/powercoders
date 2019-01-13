@@ -9,17 +9,10 @@ function createNewListItem(itemName) {
     document.getElementById('item').focus();
     console.log('The button was clicked: ' + itemName);
     elli.remove();
-
   });
 
-  // append the span to the li node
   elli.appendChild(elspan);
-
-  //append the button node to the li node
   elli.appendChild(elbutton);
-  // button's .innerText property
-
-  // return the li node
   return elli;
 }
 
