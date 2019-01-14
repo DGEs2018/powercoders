@@ -12,7 +12,7 @@ a constant variable `elspan`.
 Line 5 calls the createElement method. It then passes a single string parameter `button` to the method, creating a new
 `button` element in the DOM. This new element is returned and stored as a constant variable known as elbutton.
 
-Line 6 attaches / appends the innerText string `delete` between the constant variable `elbutton` defined on line 5.
+Line 6 attaches / appends the innerText string `delete` between the element 'button' the constant variable `elbutton` defined on line 5.
 
 Line 8 calls the EventTarget addEventListener method on the DOM in a global document variable. When the `click` event is
 triggered, the function will be invoked.
