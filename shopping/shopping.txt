@@ -45,7 +45,7 @@ Line 23 uses the `querySelector` method on the HTML DOM object in the global doc
 element `button`. This returned element object is then set to boolean `.disabled = false` attribute meaning the button
 should still be clickable.
 
-Line 25 tells the browser using the addEventListener method to call the function specified on the click event
+Line 25 uses the `addEventListener` method n the DOM in a global document variable to tell the browser using the addEventListener method to call the function specified on the click event
 
 Line 26 says if, `inputVal.value`, the input typed by the user, which is trimmed from both ends by the method,
 `.trim()`, is anything but / is not equal to empty value '',
