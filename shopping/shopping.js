@@ -9,10 +9,10 @@ function createNewListItem(itemName) {
   const elspan = document.createElement('span');
   elspan.innerText = itemName;
   const deleteIcon = document.createElement('i');
-  const clearList = document.getElementById('elli');
+ /* const clearList = document.getElementById('li');*/
 
   const clearListButton = document.querySelector('button#clear');
-  const listItems = document.querySelectorAll('elli');
+  const listItems = document.querySelectorAll('li');
 
 
   deleteIcon.addEventListener('click', function (event) {
@@ -34,57 +34,68 @@ function createNewListItem(itemName) {
   return elli;
 }
 
-document.addEventListener('DOMContentLoaded', function (event) {
-  const inputVal = document.getElementById('item');
-  const shoppingList = document.querySelector('ul');
-  const addItemButton = document.querySelector('button#add');
-  const clearListButton = document.querySelector('button#clear')
-  document.querySelector('button').disabled = false;
+function domContentLoaded() {
+    const inputVal = document.getElementById('item');
+    const shoppingList = document.querySelector('ul');
+    const addItemButton = document.querySelector('button#add');
+    const clearListButton = document.querySelector('button#clear')
+    document.querySelector('button').disabled = false;
 
-  document.querySelector('button').addEventListener('click', function (event) {
-    const trimmedValue = inputVal.value.trim();
+    document.querySelector('button').addEventListener('click', function (event) {
+      const trimmedValue = inputVal.value.trim();
 
-    if (trimmedValue === '') {
-      return;
-    }
+      if (trimmedValue === '') {
+        return;
+      }
 
-    shoppingList.appendChild(createNewListItem(trimmedValue));
-    inputVal.value = '';
-    addItemButton.disabled = true;
-    clearListButton.disabled = false;
-    inputVal.focus();
-  });
-
-  inputVal.addEventListener('keyup', function (event) {
-    const trimmedValue = inputVal.value.trim();
-    addItemButton.disabled = trimmedValue === '';
-
-    if (trimmedValue === '') {
-      return
-    }
-
-    if (event.key !== 'Enter') {
-      return
-    }
-    shoppingList.appendChild(createNewListItem(trimmedValue));
-    inputVal.value = '';
-    addItemButton.disabled = true;
-    clearListButton.disabled = false;
-  });
-
-  clearListButton.addEventListener('click', function (event) {
-    const listItems = document.querySelectorAll('li');
-    listItems.forEach(function (element) {
-      console.log('Everything is deleted');
-      element.remove();
+      shoppingList.appendChild(createNewListItem(trimmedValue));
+      inputVal.value = '';
+      addItemButton.disabled = true;
+      clearListButton.disabled = false;
+      inputVal.focus();
     });
+
+    inputVal.addEventListener('keyup', function (event) {
+      const trimmedValue = inputVal.value.trim();
+      addItemButton.disabled = trimmedValue === '';
+
+      if (trimmedValue === '') {
+        return
+      }
+
+      if (event.key !== 'Enter') {
+        return
+      }
+      shoppingList.appendChild(createNewListItem(trimmedValue));
+      inputVal.value = '';
+      addItemButton.disabled = true;
+      clearListButton.disabled = false;
+    });
+
+    clearListButton.addEventListener('click', function (event) {
+      const listItems = document.querySelectorAll('li');
+      listItems.forEach(function (element) {
+        console.log('Everything is deleted');
+        element.remove();
+      });
+      clearListButton.disabled = true;
+
+    });
+
+    inputVal.focus();
+    addItemButton.disabled = true;
     clearListButton.disabled = true;
 
+}
+if (document.readyState === 'loading') {
+  //DOMContentLoaded  has not fired yet.
+  document.addEventListener('DOMContentLoaded', function(event) {
+    domContentLoaded();
   });
+} else {
+  //DOMContentLoaded has fired.
+  domContentLoaded();
+}
 
-  inputVal.focus();
-  addItemButton.disabled = true;
-  clearListButton.disabled = true;
-});
 
 
