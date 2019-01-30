@@ -35,7 +35,7 @@ function createNewListItem(itemName, quantity) {
 
   if (quantity !== 0) {
     elli.appendChild(document.createTextNode(''));
-    const qtyText = document.createTextNode('elspan');
+    const qtyText = document.createTextNode('span');
     qtyText.textContent = `(${quantity})`;
     elli.appendChild(qtyText);
   }
