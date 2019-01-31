@@ -1,48 +1,47 @@
 /**
  * Creates <b>and</b> returns an 'li' element for inclusion in the shopping list
  *
- * @param {string} itemName Name of the item to add to the list
- * @param {string} quantity Quantity of the item to append to the list
+ * @param {{name: string, quantity: string}} item Item to add to the list
  * @returns {HTMLElement} li element
  */
-function createNewListItem(itemName, quantity) {
-  const elli = document.createElement('li');
+
+function createNewListItem(item) {
+  const/**/ elli = document.createElement('li');
   const elspan = document.createElement('span');
-  elspan.innerText = itemName;
+  elspan.innerText = item.name;
   const deleteIcon = document.createElement('i');
   const qty = document.createElement('span');
-  qty.textContent = '  (' + quantity + ')';
+  qty.textContent = '  (' + item.quantity + ')';
 
   const clearListButton = document.querySelector('button#clear');
   const listItems = document.querySelectorAll('li');
 
 
-  deleteIcon.addEventListener('click', function (event) {
+  deleteIcon.addEventListener('click', function () {
     document.getElementById('item').focus();
-    console.log('The button was clicked: ' + itemName);
+    console.log('The button was clicked: ' + item.name);
     elli.remove();
-    if (listItems.length === 0) {
+/*    if(listItems.length){
       clearListButton.disabled = true;
     } else {
       clearListButton.disabled = false;
-    }
+    }*/
     clearListButton.disabled = listItems.length === 0;
     /*document.querySelector('button#clear').disabled =
         document.querySelectorAll('elli').length === 0*/
   });
-
   elli.appendChild(elspan);
 
-  if (quantity !== 0) {
+  if (item.quantity !== 0) {
     elli.appendChild(document.createTextNode(''));
     const qtyText = document.createTextNode('span');
-    qtyText.textContent = `(${quantity})`;
+    qtyText.textContent = `(${item.quantity})`;
     elli.appendChild(qtyText);
   }
+
   elli.appendChild(deleteIcon).className = 'far fa-trash-alt';
   return elli;
 }
-
 
 function domContentLoaded() {
   const inputVal = document.getElementById('item');
@@ -53,21 +52,26 @@ function domContentLoaded() {
 
   document.querySelector('button').disabled = false;
 
-  document.querySelector('button').addEventListener('click', function (event) {
+  document.querySelector('button').addEventListener('click', function () {
     const trimmedValue = inputVal.value.trim();
 
     if (trimmedValue === '') {
       return;
     }
 
-    shoppingList.appendChild(createNewListItem(trimmedValue, quantity.value));
+    const item = {
+      name: inputVal.value.trim(),
+      quantity: quantity.value.trim()
+    };
+
+    shoppingList.appendChild(createNewListItem(item));
     inputVal.value = '';
     addItemButton.disabled = true;
     clearListButton.disabled = false;
     inputVal.focus();
   });
 
-  inputVal.addEventListener('keyup', function (event) {
+  inputVal.addEventListener('keyup', function () {
     const trimmedValue = inputVal.value.trim();
     addItemButton.disabled = trimmedValue === '';
 
@@ -78,13 +82,19 @@ function domContentLoaded() {
     if (event.key !== 'Enter') {
       return
     }
-    shoppingList.appendChild(createNewListItem(trimmedValue, quantity.value.trim()));
+
+    const item = {
+      name: inputVal.value.trim(),
+      quantity: quantity.value.trim()
+    };
+
+    shoppingList.appendChild(createNewListItem(item));
     inputVal.value = '';
     addItemButton.disabled = true;
     clearListButton.disabled = false;
   });
 
-  clearListButton.addEventListener('click', function (event) {
+  clearListButton.addEventListener('click', function () {
     const listItems = document.querySelectorAll('li');
     listItems.forEach(function (element) {
       console.log('Everything is deleted');
@@ -102,7 +112,7 @@ function domContentLoaded() {
 
 if (document.readyState === 'loading') {
   //DOMContentLoaded  has not fired yet.
-  document.addEventListener('DOMContentLoaded', function (event) {
+  document.addEventListener('DOMContentLoaded', function () {
     domContentLoaded();
   });
 } else {
