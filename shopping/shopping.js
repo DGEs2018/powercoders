@@ -5,7 +5,7 @@
  * @param quantity  {string} Quantity of the item
  * @constructor
  */
-function ShoppingListItem(name, quantity){
+function ShoppingListItem(name, quantity) {
   this.name = name;
   this.quantity = quantity;
 }
@@ -33,11 +33,11 @@ function createNewListItem(item) {
     document.getElementById('item').focus();
     console.log('The button was clicked: ' + item.name);
     elli.remove();
-/*    if(listItems.length){
-      clearListButton.disabled = true;
-    } else {
-      clearListButton.disabled = false;
-    }*/
+    /*    if(listItems.length){
+          clearListButton.disabled = true;
+        } else {
+          clearListButton.disabled = false;
+        }*/
     clearListButton.disabled = listItems.length === 0;
     /*document.querySelector('button#clear').disabled =
         document.querySelectorAll('elli').length === 0*/
@@ -92,7 +92,8 @@ function domContentLoaded() {
       return
     }
 
-    const item = new ShoppingListItem(trimmedValue, quantity.value);;
+    const item = new ShoppingListItem(trimmedValue, quantity.value);
+
 
     shoppingList.appendChild(createNewListItem(item));
     inputVal.value = '';
