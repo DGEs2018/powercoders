@@ -8,7 +8,7 @@
 function ShoppingListItem(name, quantity) {
   this.name = name;
   this.quantity = quantity;
-  this.toListItem = function(){
+  this.toListItem = function () {
     // pretty long lines of code here - could work, but preferable would be other way,
   }
 }
@@ -18,7 +18,7 @@ function ShoppingListItem(name, quantity) {
  *
  * @returns {HTMLElement} li element
  */
-ShoppingListItem.prototype.toListItem = function(){
+ShoppingListItem.prototype.toListItem = function () {
   const elli = document.createElement('li');
   const elspan = document.createElement('span');
   elspan.innerText = this.name;
@@ -54,8 +54,8 @@ ShoppingListItem.prototype.toListItem = function(){
 
   elli.appendChild(deleteIcon).className = 'far fa-trash-alt';
   return elli;
-  }
-   
+}
+
 function domContentLoaded() {
   const inputVal = document.getElementById('item');
   const shoppingList = document.querySelector('ul');
