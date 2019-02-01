@@ -55,7 +55,7 @@ ShoppingListItem.prototype.toListItem = function(){
   elli.appendChild(deleteIcon).className = 'far fa-trash-alt';
   return elli;
   }
-
+   
 function domContentLoaded() {
   const inputVal = document.getElementById('item');
   const shoppingList = document.querySelector('ul');
