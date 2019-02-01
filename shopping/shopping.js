@@ -8,22 +8,23 @@
 function ShoppingListItem(name, quantity) {
   this.name = name;
   this.quantity = quantity;
+  this.toListItem = function(){
+    // pretty long lines of code here - could work, but preferable would be other way,
+  }
 }
 
 /**
  * Creates <b>and</b> returns an 'li' element for inclusion in the shopping list
  *
- * @param {ShoppingListItem} item Item to add to the list
  * @returns {HTMLElement} li element
  */
-
-function createNewListItem(item) {
-  const/**/ elli = document.createElement('li');
+ShoppingListItem.prototype.toListItem = function() {
+  const elli = document.createElement('li');
   const elspan = document.createElement('span');
-  elspan.innerText = item.name;
+  elspan.innerText = this.name;
   const deleteIcon = document.createElement('i');
   const qty = document.createElement('span');
-  qty.textContent = '  (' + item.quantity + ')';
+  qty.textContent = '  (' + this.quantity + ')';
 
   const clearListButton = document.querySelector('button#clear');
   const listItems = document.querySelectorAll('li');
@@ -44,10 +45,10 @@ function createNewListItem(item) {
   });
   elli.appendChild(elspan);
 
-  if (item.quantity !== 0) {
+  if (this.quantity !== 0) {
     elli.appendChild(document.createTextNode(''));
     const qtyText = document.createTextNode('span');
-    qtyText.textContent = `(${item.quantity})`;
+    qtyText.textContent = `(${this.quantity})`;
     elli.appendChild(qtyText);
   }
 
@@ -73,7 +74,7 @@ function domContentLoaded() {
 
     const item = new ShoppingListItem(trimmedValue, quantity.value);
 
-    shoppingList.appendChild(createNewListItem(item));
+    shoppingList.appendChild(item.toListItem());
     inputVal.value = '';
     addItemButton.disabled = true;
     clearListButton.disabled = false;
@@ -95,7 +96,7 @@ function domContentLoaded() {
     const item = new ShoppingListItem(trimmedValue, quantity.value);
 
 
-    shoppingList.appendChild(createNewListItem(item));
+    shoppingList.appendChild(item.toListItem);
     inputVal.value = '';
     addItemButton.disabled = true;
     clearListButton.disabled = false;
