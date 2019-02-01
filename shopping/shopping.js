@@ -8,9 +8,6 @@
 function ShoppingListItem(name, quantity) {
   this.name = name;
   this.quantity = quantity;
-  this.toListItem = function () {
-    // pretty long lines of code here - could work, but preferable would be other way,
-  }
 }
 
 /**
@@ -54,7 +51,7 @@ ShoppingListItem.prototype.toListItem = function () {
 
   elli.appendChild(deleteIcon).className = 'far fa-trash-alt';
   return elli;
-}
+};
 
 function domContentLoaded() {
   const inputVal = document.getElementById('item');
@@ -96,7 +93,7 @@ function domContentLoaded() {
     const item = new ShoppingListItem(trimmedValue, quantity.value);
 
 
-    shoppingList.appendChild(item.toListItem);
+    shoppingList.appendChild(item.toListItem());
     inputVal.value = '';
     addItemButton.disabled = true;
     clearListButton.disabled = false;
