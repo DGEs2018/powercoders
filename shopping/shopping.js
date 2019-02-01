@@ -18,7 +18,7 @@ function ShoppingListItem(name, quantity) {
  *
  * @returns {HTMLElement} li element
  */
-ShoppingListItem.prototype.toListItem = function() {
+ShoppingListItem.prototype.toListItem = function(){
   const elli = document.createElement('li');
   const elspan = document.createElement('span');
   elspan.innerText = this.name;
@@ -54,7 +54,7 @@ ShoppingListItem.prototype.toListItem = function() {
 
   elli.appendChild(deleteIcon).className = 'far fa-trash-alt';
   return elli;
-}
+  }
 
 function domContentLoaded() {
   const inputVal = document.getElementById('item');
