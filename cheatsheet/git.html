@@ -3,78 +3,99 @@
   <head>
     <title>Note from the terminolology and functionalities of GIT
     </title>
-</head>
+    </head>
+    <link type="text/css" rel="stylesheet" href="git.css">
 <body>
-  <pre>git init -
-
-git status – shows the current state of the git in that folder
-
-When working with git, it needs to know whether it gives attention to the file, if so….it’s called, tracking
-
-Now we have just initialized, in our case now with the git status….hence it calls it untracked files.
-We have to explicitly tell it with other commands to do track….
-
-Cache or stage – a terminology
-
-git commit(space -m “save first version of the file.”, whatever is copied in index GIT doesn’t copy it, but rather moves it to the repository….
-.., -m, specifies the message that  name of the thing, git rm dash dash cached
-
-git add, from the working directory to the index
-git commit, copies files from the index file to the repository
-git log
-+0100 1 hour ahead of GMT, greenwitch mean time.
-
-SCRATCH>type index.html
-
-
-
-Commit – is its unique identifier, user name and email, is to the give info who did the change
-
-G, git diff, difference in the repository vs in the working directory
-
-Instead of allowing to pull off from the top, when it’s …
-
-Three key steps, if there a lot of output….you could get to the bottom with a space,
-
-1. Enter 2. Space 3. q-key
-
-@@ is the chunk header
--m, n
-
-<h1>The workflow outlined below is going to be what we will be frequently needing in the course of this programme</h1>
-
-<ul><li><li>Git workflow with diff</li>
-
+   <h1>Version control system workflow</h1>
+   <p>Outlined below is what we will be frequently needing till the end of this programme and later</p>
+<ul>
+  <li>Git workflow with diff</li>
   <li>Work Directory –</li>
-
   <li>git diff… to check what is already been changed.</li>
-
   <li>git add…</li>
-
   <li>Index –</li>
-
   <li>git commit … moves the file it into the repository</li>
-
   <li>Repository –</li>
+  <li>Apache, perforce, BitBucket,</li>
+ </ul>
 
-  <li>Apache, perforce, Plastic,</li></ul>
+<li>git diff if you don’t PARTICULARLY tell it what file you are interested in, then it returns only the existing git diff</li>
 
-<li>giff if you don’t PARTICULARLY tell it what file you are interested in, then it returns only the existing git diff</li>
-
-<arcticle><div id="git description">git will manage all the files under the poco….directory. , all of the children in the directory are covered by git..….
+<div id="git description">
+  <p>git will manage all the files under the poco….directory. , all of the children in the directory are covered by git..….
   if git add index.html.( want you to add this file, or for several you will use different )..with a file that doesn’t work, it will give an error message….
 
   Copy of the file between in the working directory, old version of in two files,...incrementally building up bit by bit……
   Git  checking the working directory vs index, and working directory vs Repository…
 
   They do not contain the same file, but rather copies of that file…..
-  git log, shows most recent first….(it doesn’t matter in which directory)</div></arcticle></pre>
+  git log, shows most recent first….(it doesn’t matter in which directory)</p>
+</div>
 <ul>git terminologies
   <li>git init</li>
   <li>git status</li>
   <li>git commit</li>
-  <li>git diff</li>
+  <li>git diff - double check the changes are what you</li>
+  <li>git diff - normally compares with the index</li>
   <li></li>
 </ul>
+<h2>Git fundamentals</h2>
+<h2>The three location between which git commands copy files</h2>
+<ul>
+  <li>Working directory</li>
+  <li>index</li>
+  <li>repository</li>
+</ul>
+<ul><h4>git init</h4>
+  <li>Informs git where the root of the repository is located</li>
+  <li>Everything under this directory could be managed by Git</li>
+  <li>Multiple repos on a computer is possible, just not a repo inside another</li>
+  </ul>
+  <h2>git status</h2>
+  <h2>git add index.html</h2>
+  <h2>git status after git add</h2>
+  <pre>On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached &lt;file&gt;..." to unstage)
+
+        new file:   index.html</pre>
+<h2>Push commits to GitHub</h2>
+<ul>git log
+  <li>shows changes done</li>
+  <ul><h4>Making and committing a change</h4>
+  </ul>
+</ul>
+<ul>
+  <img src="git-workflow-with-diff.svg" alt="GIT workflow with diff">
+<li>git add index.html - add the changes to the index</li>
+<li>git diff --cached index.html</li>
+  <li>git push</li>
+  <li>git</li>
+</ul>
+<pre>
+  git init -
+  git status – shows the current state of the git in that folder
+  When working with git, it needs to know whether it gives attention to the file, if so….it’s called, tracking
+  Now we have just initialized, in our case now with the git status….hence it calls it untracked files.
+  We have to explicitly tell it with other commands to do track….
+  Cache or stage – a terminology
+  git commit(space -m “save first version of the file.”, whatever is copied in index GIT doesn’t copy it, but rather moves it to the repository….
+  .., -m, specifies the message that  name of the thing, git rm dash dash cached
+  git add, from the working directory to the index
+  git commit, copies files from the index file to the repository
+  git log
+  +0100 1 hour ahead of GMT, greenwitch mean time.
+  SCRATCH type index.html
+  Commit – is its unique identifier, user name and email, is to the give info who did the change
+  G, git diff, difference in the repository vs in the working directory
+  Instead of allowing to pull off from the top, when it’s …
+  Three key steps, if there a lot of output….pressing the space button gets you to the bottom,
+  1. Enter 2. Space 3. q-key
+  @@ is the chunk header
+  -m, n
+</pre>
 </body>
 </html>

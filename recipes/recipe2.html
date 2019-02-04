@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <title>Green Tea Nochka</title>
- </head>
+  <head>
+    <title>Green Tea Nochka</title>
+
+    <link rel="stylesheet" type="text/css" href="recipe2.css">
+
+    <script src="recipes.js"></script>
+  </head>
   <body>
+    <!--<div class="green-tea-notchka">-->
     <h1>Green Tea Nochka</h1>
-    <img src="Gr_Tea_Nokcha_Cake.png" alt="Sweet_green_tea_nochka_Cake">
-    <h1>List of ingredients</h1>
-     <ol><li>3 eggs</li>
-       <li>1/2 cup of superfine sugar.* (You can use less if you prefer for your cake not to be sweet.)</li>
-       <li>1/2 cup of vegetable oil</li>
-       <li>3/4 cup of plain Greek-style yogurt</li>
-       <li>1 teaspoon of vanilla extract</li>
-       <li>1 1/2 cups of cake flour</li>
-       <li>1 teaspoon of baking powder</li>
-       <li>6 teaspoons of green tea powder (nok-cha karu, matcha)</li>
-       <li>Cream cheese frosting (optional) (Consider the frosting if you plan to use little to no sugar.)</li>
-     </ol>
-      <h2>Steps to Make It</h2>
-      <p>To begin making the cake, turn the oven on and preheat it to 350 F.Then, in a mixing bowl, beat eggs, sugar, vanilla, and oil together until the resulting mixture is fluffy and light.
-      Gently stir Greek yogurt into the mixture. This yogurt has a range of health benefits, including high protein content and probiotics which are great for balancing gut bacteria. Choose the organic variety if it's available and in your budget range.
-      After stirring in the yogurt, get a separate bowl, and then sift the flour, baking powder, and green tea powder together.
+    <div id="#ingredients">
+      <h1><span id="hide-list" class="show" onclick="hide(event);">v</span>
+        <span id="show-list" class="hide" onclick="show(event);">&gt;</span>
+        Ingredients</h1>
+      <img src="Gr_Tea_Nokcha_Cake.png" alt="Sweet_green_tea_nochka_Cake">
+
+      <h1 id="ingredient list">List of ingredients</h1>
+
+      <ul id="ingredient-list">
+        <li>3 eggs</li>
+        <li>1/2 cup of superfine sugar.* (You can use less if you prefer for your cake not to be sweet.)</li>
+        <li>1/2 cup of vegetable oil</li>
+        <li>3/4 cup of plain Greek-style yogurt</li>
+        <li>1 teaspoon of vanilla extract</li>
+        <li>1 1/2 cups of cake flour</li>
+        <li>1 teaspoon of baking powder</li>
+        <li>6 teaspoons of green tea powder (nok-cha karu, matcha)</li>
+        <li>Cream cheese frosting (optional) (Consider the frosting if you plan to use little to no sugar.)</li>
+      </ul>
+    </div>
+
+    <div id="steps"><h3>Steps to Make It</h3>
+      To begin making the cake, turn the oven on and preheat it to 350 F.Then, in a mixing bowl, beat eggs, sugar,
+      vanilla, and oil together until the resulting mixture is fluffy and light.
+      Gently stir Greek yogurt into the mixture. This yogurt has a range of health benefits, including high protein
+      content and probiotics which are great for balancing gut bacteria. Choose the organic variety if it's available
+      and in your budget range.
+      After stirring in the yogurt, get a separate bowl, and then sift the flour, baking powder, and green tea powder
+      together.
       Next, gently fold the flour mixture into the wet sugar-yogurt mixture.
       Then, pour the resulting cake batter into a greased cake pan, smoothing out the top until level.
-      Bake the cake for 35 minutes or until the top becomes golden brown and a toothpick comes out clean from the middle. If there's batter on the pick, keep the cake in the oven for a few more minutes, checking periodically until it's done.
+      Bake the cake for 35 minutes or until the top becomes golden brown and a toothpick comes out clean from the
+      middle. If there's batter on the pick, keep the cake in the oven for a few more minutes, checking periodically
+      until it's done.
       If you're using cream cheese frosting instead of sugar, wait for the cake to cool down before icing it.
       *If you can't find superfine sugar, learn to do-it-yourself.
-      ** NOTE: If you don't have cake flour and need to substitute all-purpose flour in this recipe, then you need to use LESS all-purpose flour. Use 1.5 cups minus 3 tablespoons of all-purpose flour.
-     </p>
-           <section>Green Tea Is a Well-Known Antioxidant
-            Green tea is a staple of the Eastern diet, but as Westerners begin to take an interest in all things from the Orient, the tea has garnered a following abroad. In fact, green tea has been used in hundreds of Western clinical studies in recent years, and the research has been overwhelmingly positive. It has found that green tea can potentially fight cancer, heart disease, high cholesterol, diabetes, and dementia. It may even counteract the effects of reproductive health problems, such as fibroids and endometriosis. And if you're watching your waistline, studies have found that green tea has belly-blasting properties.
-           So, what's so magical about green tea? The unfermented leaves of green tea contain antioxidants known as polyphenols, which fight the free radicals that damage cells in the body and lead to disease. Polyphenols contain six major catechin compounds, most famously EGCG, which has been the subject of much research. EGCG is even sold as a supplement.
-          </section>
+      ** NOTE: If you don't have cake flour and need to substitute all-purpose flour in this recipe, then you need to
+      use LESS all-purpose flour. Use 1.5 cups minus 3 tablespoons of all-purpose flour.
+    </div>
+
+    <div id="remark">
+      <section>Green Tea Is a Well-Known Antioxidant
+        Green tea is a staple of the Eastern diet, but as Westerners begin to take an interest in all things from the
+        Orient, the tea has garnered a following abroad. In fact, green tea has been used in hundreds of Western
+        clinical studies in recent years, and the research has been overwhelmingly positive. It has found that green tea
+        can potentially fight cancer, heart disease, high cholesterol, diabetes, and dementia. It may even counteract
+        the effects of reproductive health problems, such as fibroids and endometriosis. And if you're watching your
+        waistline, studies have found that green tea has belly-blasting properties.
+        So, what's so magical about green tea? The unfermented leaves of green tea contain antioxidants known as
+        polyphenols, which fight the free radicals that damage cells in the body and lead to disease. Polyphenols
+        contain six major catechin compounds, most famously EGCG, which has been the subject of much research. EGCG is
+        even sold as a supplement.
+      </section>
+    </div>
   </body>
 </html>

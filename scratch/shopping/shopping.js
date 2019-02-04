@@ -26,6 +26,7 @@ function createNewListItem(itemName) {
   elbutton.innerText = 'Delete';
 
   elbutton.addEventListener('click', function (event) {
+    document.getElementById('item').focus();
     console.log('The button was clicked: ' + itemName);
     elli.remove();
 
@@ -37,36 +38,108 @@ function createNewListItem(itemName) {
   //append the button node to the li node
   elli.appendChild(elbutton);
   // button's .innerText property
-  // return the li node
 
+  // return the li node
   return elli;
 };
 
 document.addEventListener('DOMContentLoaded', function (event) {
+  let inputVal = document.getElementById('item');
+  let shoppingList = document.querySelector('ul');
+
   document.querySelector('button').addEventListener('click', function () {
-    let inputVal = document.getElementById('item');
-    console.log(inputVal.value);
-// call createNewListItem with the contents of the input widget and save the result in a variable
-    let elli = createNewListItem(inputVal.value);
+    let inputVal = inputVal.value.trim();
+    if (inputVal.value.trim() !== '') {
+      shoppingList.appendChild(createNewListItem(inputVal.value));
+    }
+    inputVal.value = '';
+    inputVal.focus();
+    /*console.log(alert('Please enter a valid value!'));*/
+    // console.log(inputVal.value.trim());
 
-    //Use document.querySelector to find the ul element and save the result in a variable
-
-    let storVar2 = document.querySelector('ul');
-
-    //append the li element returned by createNewListItem to the ul element
-
-    storVar2.append(elli);
 
   });
 
-  document.querySelector('input').addEventListener('keyup', function(event) {
-    if(event.key === 'Enter'){
-      let inputVal = document.getElementById('item');
-      let elli = createNewListItem(inputVal.value);
-      let storVar2 = document.querySelector('ul');
-      storVar2.append(elli);
-      return event.key;
+  inputVal.addEventListener('keyup', function (event) {
+    const trimmedValue = inputVal.value.trim();
+
+    if (trimmedValue !== '') {
+      addItemButton.disabled = trimmedValue === '';
+      if (event.key === 'Enter') {
+        shoppingList.appendChild(createNewListItem(trimmedValue));
+        inputVal.value = '';
+      }
     }
 
+    addItemButton.disabled = trimmedValue === '';
   });
+  inputVal.focus();
+  addItemButton.disabled = true;
 });
+
+BACKUP IN CASE THIS DOESNT WORKOUT
+
+/**
+ * Creates <b>and</b> returns an 'li' element for inclusion in the shopping list
+ *
+ * @param {string} itemName Name of the item to add to the list
+ * @returns {HTMLElement} li element
+ */
+function createNewListItem(itemName) {
+  const elli = document.createElement('li');
+  const elspan = document.createElement('span');
+  elspan.innerText = itemName;
+  const elbutton = document.createElement('button');
+  elbutton.innerText = 'Delete';
+
+  elbutton.addEventListener('click', function (event) {
+    document.getElementById('item').focus();
+    console.log('The button was clicked: ' + itemName);
+    elli.remove();
+  });
+
+  elli.appendChild(elspan);
+  elli.appendChild(elbutton);
+  return elli;
+}
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  const inputVal = document.getElementById('item');
+  const shoppingList = document.querySelector('ul');
+  const addItemButton = document.querySelector('button');
+  document.querySelector('button').disabled = false;
+
+  document.querySelector('button').addEventListener('click', function (event) {
+    const trimmedValue = inputVal.value.trim();
+
+    if (trimmedValue === '') {
+      return;
+    }
+
+    shoppingList.appendChild(createNewListItem(trimmedValue));
+    inputVal.value = '';
+    addItemButton.disabled = true;
+    inputVal.focus();
+  });
+
+  inputVal.addEventListener('keyup', function (event) {
+    const trimmedValue = inputVal.value.trim();
+    addItemButton.disabled = trimmedValue === '';
+
+    if (trimmedValue === '') {
+      return
+    }
+
+    if (event.key !== 'Enter') {
+      return
+    }
+    shoppingList.appendChild(createNewListItem(trimmedValue));
+    inputVal.value ='';
+    addItemButton.disabled = true;
+  });
+
+  inputVal.focus();
+  addItemButton.disabled = true;
+});
+
+

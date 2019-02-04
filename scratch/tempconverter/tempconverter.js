@@ -1,4 +1,4 @@
-function celFahr(C) {
+function cel2Fahr(C) {
   return C*9/5 +32; /* C denotes temperature in degree Celsius*/
   console.log('Javascript run checked!');
 }

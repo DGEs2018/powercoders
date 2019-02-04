@@ -21,7 +21,7 @@ function Person(first, last, interests) {
 
 /**
  * Represents an item in the shopping list.
- * 
+ *
  * @param name {string} Name of the item
  * @param quantity  {string} Quantity of the item
  * @constructor

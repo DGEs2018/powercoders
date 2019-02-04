@@ -35,26 +35,26 @@ function addList() {
 
     let elUl = document.createElement('ul');
 
-    elBod.appendChild(ul);
+    elBod.appendChild(elUl);
 
     let elLi1 = document.createElement('li');
-    let li1Content = document.createTextNode('First listitem');
+    let elLi1Content = document.createTextNode('First listitem');
     elUl.appendChild(elLi1);
-    elLi1.appendChild(li1Content);
+    elLi1.appendChild(elLi1Content);
 
 
     let elLi2 = document.createElement('li');
-    let li2Content = document.createTextNode('Second item displaying ');
+    let elLi2Content = document.createTextNode('Second item displaying ');
     let emTex = document.createTextNode('an emphasised');
     let liContent2 = document.createTextNode(' text');
     elUl.appendChild(elLi2);
-    elLi2.appendChild(liContent);
+    elLi2.appendChild(elLi2Content);
     elLi2.appendChild(emTex);
 
 
     let elLi3 = document.createElement('li');
-    let li3Content = document.createTextNode('Third item');
-    elLi3.appendChild(li3Content);
+    let elLi3Content = document.createTextNode('Third item');
+    elLi3.appendChild(elLi3Content);
 
     document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('lister').addEventListener('click', function() {

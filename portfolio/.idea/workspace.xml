@@ -2,20 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e7f4a5-fd60-4560-b910-d27bbb7300db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../scratch/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratch/shopping/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratch/shopping/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratch/shopping/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratch/shopping/.idea/shopping.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratch/shopping/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratch/shopping/shopping.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratch/shopping/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cheatsheet/git.html" beforeDir="false" afterPath="$PROJECT_DIR$/../cheatsheet/git.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cheatsheet/html.html" beforeDir="false" afterPath="$PROJECT_DIR$/../cheatsheet/html.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cheatsheet/shell.html" beforeDir="false" afterPath="$PROJECT_DIR$/../cheatsheet/shell.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSSgrid/Encssgr.html" beforeDir="false" afterPath="$PROJECT_DIR$/CSSgrid/Encssgr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSSgrid/encssgr.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSSgrid/encssgr.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-m.css___jb_old___" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-s.css___jb_old___" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio.css___jb_old___" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../recipes/recipe1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../recipes/recipe1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../recipes/recipe2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../recipes/recipe2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../recipes/recipe3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../recipes/recipe3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scratch/DOM/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/DOM/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scratch/DOM_Appending/appending.js" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/DOM_Appending/appending.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scratch/box-model/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/box-model/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scratch/changeclass/setClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/changeclass/setClass.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scratch/display/breadcrumb.css" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/display/breadcrumb.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scratch/display/breadcrumb.html" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/display/breadcrumb.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scratch/position/position.html" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/position/position.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scratch/position/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/position/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scratch/shopping/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/shopping/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scratch/shopping/shopping.js" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/shopping/shopping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scratch/tempconverter/tempconverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../scratch/tempconverter/tempconverter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopping/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../shopping/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopping/shopping.js" beforeDir="false" afterPath="$PROJECT_DIR$/../shopping/shopping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shopping/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../shopping/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,11 +49,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4624">
-              <caret line="272" column="6" selection-start-line="272" selection-start-column="6" selection-end-line="272" selection-end-column="6" />
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSSgrid/gridcv.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSSgrid/Encssgr.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="211" column="10" selection-start-line="211" selection-start-column="10" selection-end-line="211" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CSSgrid/encssgr.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSSgrid/gridcv.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -40,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
+            <state relative-caret-position="340">
               <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
@@ -81,14 +138,18 @@
         <option value="$PROJECT_DIR$/portfolio-m.css" />
         <option value="$PROJECT_DIR$/portfolio-s.css" />
         <option value="$PROJECT_DIR$/portfolio.html" />
+        <option value="$PROJECT_DIR$/CSSgrid/gridcv.html" />
+        <option value="$PROJECT_DIR$/CSSgrid/gridcv.css" />
+        <option value="$PROJECT_DIR$/CSSgrid/Encssgr.html" />
+        <option value="$PROJECT_DIR$/CSSgrid/encssgr.css" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-12" />
-    <option name="y" value="69" />
-    <option name="width" value="1461" />
-    <option name="height" value="1320" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1101" />
+    <option name="y" value="49" />
+    <option name="width" value="876" />
+    <option name="height" value="1374" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -103,6 +164,11 @@
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="portfolio" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="CSSgrid" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -112,9 +178,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../recipes" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -128,12 +195,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.Encssgr.html">
+    <configuration name="Encssgr.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/portfolio/CSSgrid/Encssgr.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="gridcv.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/portfolio/CSSgrid/gridcv.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="portfolio.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/portfolio/portfolio.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.Encssgr.html" />
+        <item itemvalue="JavaScript Debug.gridcv.html" />
         <item itemvalue="JavaScript Debug.portfolio.html" />
       </list>
     </recent_temporary>
@@ -149,24 +224,27 @@
       <option name="presentableId" value="Default" />
       <updated>1545060395494</updated>
       <workItem from="1545060397038" duration="2869000" />
-      <workItem from="1545559303567" duration="379000" />
+      <workItem from="1545559303567" duration="1886000" />
+      <workItem from="1546641807251" duration="642000" />
+      <workItem from="1546702809025" duration="2775000" />
+      <workItem from="1547619899641" duration="1850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3248000" />
+    <option name="totallyTimeSpent" value="10022000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="46" width="974" height="880" extended-state="0" />
+    <frame x="-7" y="-7" width="1455" height="935" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24759872" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16361073" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39973262" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.22665006" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -183,12 +261,29 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/portfolio-s.css">
+    <entry file="file://$PROJECT_DIR$/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSSgrid/gridcv.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio-la.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio-m.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -197,20 +292,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/portfolio-la.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portfolio.css">
+    <entry file="file://$PROJECT_DIR$/portfolio-s.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="527">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/portfolio.html">
+    <entry file="file://$PROJECT_DIR$/CSSgrid/gridcv.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4624">
-          <caret line="272" column="6" selection-start-line="272" selection-start-column="6" selection-end-line="272" selection-end-column="6" />
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSSgrid/Encssgr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="211" column="10" selection-start-line="211" selection-start-column="10" selection-end-line="211" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSSgrid/encssgr.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
         </state>
       </provider>
     </entry>

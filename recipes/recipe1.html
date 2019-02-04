@@ -1,18 +1,27 @@
-<!DOCTYPE html>
-<head>
-  <title>Recipe1</title>
+<!DOCTYPE >
+<html>
+  <head>
+    <title>Recipe1</title>
+    <link rel="stylesheet" type="text/css" href="recipe1.css">
+    <script src="recipes.js"></script>
+  </head>
   <body>
-    <h1>1st recipe: pasta</h1>
-      <h2>Descprition</h2>
-    <p>Pasta is one of my favourite dishes. In this paragraph I will explain how it is cooked.</p>
-         <h3>List of ingredients</h3>
-         <ol>
-            <li>a kilo of pasta</li>
-            <li>tomato to taste</li>
-            <li>onions</li>
-            <li>garlic</li>
-            <li>bouillons</li>
-            </ol>
-<img src="food-dinner-pasta-spaghetti.jpg" alt="Image of Pasta">
+    <div id="#ingredients">
+      <h1><span id="hide-list" onclick="hide(event);">-</span>
+        <span id="show-list" class="hidden" onclick="show(event);">+</span>
+        Ingredients</h1>
+      <img src="food-dinner-pasta-spaghetti.jpg" alt="Image of Pasta">
+      <!--<h1>1st recipe: pasta</h1>-->
+      <!--<h2>Descprition</h2>-->
+      <!--<p>Pasta is one of my favourite dishes. In this paragraph I will explain how it is cooked.</p>-->
+      <!--<h3>List of ingredients</h3>-->
+
+      <ul id="ingredient-list">
+        <li><em>a kilo of pasta</em></li>
+        <li><em>tomato to taste</em></li>
+        <li><em>onions</em></li>
+        <li><em>garlic</em></li>
+        <li><em>bouillons</em></li>
+      </ul>
   </body>
-</head>
+</html>
