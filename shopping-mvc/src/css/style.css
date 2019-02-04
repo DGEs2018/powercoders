@@ -1,0 +1,95 @@
+h1 {
+  font-family: Verdana;
+  text-align: left;
+  color: black;
+}
+
+label {
+  color: lightseagreen;
+}
+
+/*
+html {
+  background: url(https://uploads.visitseattle.org/2015/02/02054416/visitseattle_banner_image_975x400.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+*/
+
+/*
+body {
+  background-image: url("https://idsb.tmgrup.com.tr/2015/12/15/HaberDetay/1450123753272.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+
+}
+*/
+
+body div {
+  text-align: center;
+
+}
+
+body ul li {
+  font-family: 'Dancing Script', cursive;
+}
+
+body ul li span {
+  font-size: 12;
+}
+
+label {
+  font-size: medium;
+  font-weight: normal;
+}
+
+button {
+  background: transparent;
+  color: chartreuse;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 5px;
+
+}
+
+#sh-list {
+  margin: 0 auto;
+  width: 30%;
+
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 20px;
+}
+
+.fa-trash-alt {
+  font-size: large;
+  margin: 10px 15px;
+  color: red;
+  border: none;
+}
+
+button:disabled {
+  color: red;
+}
+
+@media screen and (min-width: 320px) {
+  div {
+    display: flex;
+  }
+
+}
+
+
+/* #header-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),(rgba(0, 0, 0, 0.5));
+} */
