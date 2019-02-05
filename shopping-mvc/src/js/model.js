@@ -30,4 +30,14 @@ class Model {
   get items() {
     return this.items_.slice();
   }
+
+  /**
+   * Delete the i'th item from the list.
+   *
+   * @param i {number}
+   */
+  delete(i){
+    this.item_.splice(i, 1);
+    this.item_.update();
+  }
 }

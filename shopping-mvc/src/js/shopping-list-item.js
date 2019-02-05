@@ -21,26 +21,16 @@ class ShoppingListItem {
     const elli = document.createElement('li');
     const elspan = document.createElement('span');
     elspan.innerText = this.name;
+
     const deleteIcon = document.createElement('i');
+    deleteIcon.className = "fas fa-cart-plus fa-2x";
+    const deleteButton = document.createElement('button');
+    deleteButton.appendChild(deleteIcon);
+    elli.appendChild(deleteButton);
+
     const qty = document.createElement('span');
     qty.textContent = '  (' + this.quantity + ')';
 
-    const clearListButton = document.querySelector('button#clear');
-    const listItems = document.querySelectorAll('li');
-
-
-    deleteIcon.addEventListener('click', function () {
-      document.getElementById('item').focus();
-      elli.remove();
-      /*    if(listItems.length){
-            clearListButton.disabled = true;
-          } else {
-            clearListButton.disabled = false;
-          }*/
-      clearListButton.disabled = listItems.length === 0;
-      /*document.querySelector('button#clear').disabled =
-          document.querySelectorAll('elli').length === 0*/
-    });
     elli.appendChild(elspan);
 
     if (this.quantity !== 0) {
