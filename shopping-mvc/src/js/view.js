@@ -20,12 +20,12 @@ class View {
   /**
    * Update the UI with the shopping list contents.
    */
-  update(){
-    while (this.shoppingList_.firstChild){
+  update() {
+    while (this.shoppingList_.firstChild) {
       this.shoppingList_.firstChild.remove();
     }
 
-    for(let i = 0; i < this.model_.items.length; i++){
+    for (let i = 0; i < this.model_.items.length; i++) {
       const item = this.model_.items[i];
       const listItem = item.toListItem();
       this.shoppingList_.appendChild(listItem);

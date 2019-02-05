@@ -6,10 +6,11 @@ class ShoppingListItem {
    * @param name {string} Name
    * @param quantity {string} Quantity
    */
-  constructor(name, quantity){
+  constructor(name, quantity) {
     this.name = name;
     this.quantity = quantity;
   }
+
   /**
    * Creates <b>and</b> returns an 'li' element for inclusion in the shopping list
    *
