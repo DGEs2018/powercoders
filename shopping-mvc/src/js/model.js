@@ -37,7 +37,16 @@ class Model {
    * @param i {number}
    */
   delete(i){
-    this.item_.splice(i, 1);
-    this.item_.update();
+    this.items_.splice(i, 1);
+    this.view_.update();
+  }
+
+  /**
+   *Clear the shopping list of all items
+   */
+  clear(){
+    this.items_ = [];
+    this.view_.update();
+
   }
 }

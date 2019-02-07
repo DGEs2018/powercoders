@@ -22,11 +22,7 @@ class ShoppingListItem {
     const elspan = document.createElement('span');
     elspan.innerText = this.name;
 
-    const deleteIcon = document.createElement('i');
-    deleteIcon.className = "fas fa-cart-plus fa-2x";
-    const deleteButton = document.createElement('button');
-    deleteButton.appendChild(deleteIcon);
-    elli.appendChild(deleteButton);
+
 
     const qty = document.createElement('span');
     qty.textContent = '  (' + this.quantity + ')';
@@ -39,8 +35,12 @@ class ShoppingListItem {
       qtyText.textContent = `(${this.quantity})`;
       elli.appendChild(qtyText);
     }
+    const deleteIcon = document.createElement('i');
+    deleteIcon.className = "fa fa-trash";
+    const deleteButton = document.createElement('button');
+    deleteButton.appendChild(deleteIcon);
+    elli.appendChild(deleteButton);
 
-    elli.appendChild(deleteIcon).className = 'far fa-trash-alt';
     return elli;
   }
 
