@@ -40,14 +40,51 @@ module.exports = function(grunt){
       }
     },
 
+    watch: {
+      less: {
+        files: 'src/css/*.less',
+        tasks: ['less']
+      },
+
+      css: {
+        files: 'src/css/*.css',
+        tasks: ['cssmin']
+      },
+      scripts: {
+        files: 'src/js/*.js',
+        tasks: ['uglify']
+      },
+      html: {
+        files: 'src/html/index.prod.html',
+        tasks: ['copy:html']
+      },
+      static: {
+        files: 'src/static/*.*',
+        tasks: ['copy:static']
+      }
+    },
+
+    less: {
+      build: {
+        files: {
+          'src/css/style.css': 'src/css/style.less'
+        }
+      }
+    },
+
+
+
+
   });
 
   //Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify-es');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-less');
 
 
   //Default task(s).
-  grunt.registerTask('default', ['cssmin', 'uglify', 'copy']);
+  grunt.registerTask('default', ['less', 'cssmin', 'uglify', 'copy']);
 };
