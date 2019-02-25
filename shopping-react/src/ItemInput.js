@@ -13,11 +13,11 @@ class ItemInput extends Component {
   }
 
   onItemChange(event){
-    this.setState({item:event.target.value}, () => console.log(this.state));
+    this.setState({item: event.target.value}, () => console.log(this.state));
   }
 
   onQuantityChange(event){
-    this.setState({quantity:event.target.value}, () => console.log(this.state));
+    this.setState({quantity: event.target.value}, () => console.log(this.state));
   }
 
   render() {
