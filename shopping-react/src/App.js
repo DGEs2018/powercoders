@@ -38,7 +38,8 @@ class App extends Component {
     return (
       <>
         <ItemInput onAddItem={this.onAddItem}/>
-        <ClearList onClearList={this.onClearList}/>
+        <ClearList onClearList={this.onClearList}
+                   disabled={this.state.items.length === 0}/>
         <ShoppingList items={this.state.items} onDeleteItem={this.onDeleteItem}/>
 
       </>

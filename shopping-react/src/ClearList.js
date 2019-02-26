@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 
 class ClearList extends Component {
   render() {
-    return <button onClick={this.props.onClearList}>Clear list</button>
+    return <button disabled={this.props.disabled}
+                   onClick={this.props.onClearList}>Clear list</button>
   }
 }
 
