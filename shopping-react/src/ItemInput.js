@@ -10,6 +10,19 @@ class ItemInput extends Component {
 
     this.onItemChange = this.onItemChange.bind(this);
     this.onQuantityChange = this.onQuantityChange.bind(this);
+    this.onKeyUp = this.onKeyUp.bind(this);
+  }
+
+  onKeyUp(event) {
+    if (this.state.item.trim() === ''){
+      return;
+    }
+
+    if (event.key !== 'Enter'){
+      return;
+    }
+
+    this.props.onAddItem(this.state.item.trim(), this.state.quantity.trim());
   }
 
   onItemChange(event){
@@ -24,8 +37,10 @@ class ItemInput extends Component {
     return (
         <div>
           <label htmlFor="item">Enter a new item:</label>
-          <input onChange={this.onItemChange} type="text" id="item" placeholder="Type something to buy"/>
-          <input onChange={this.onQuantityChange} type="text" id="quantity" size="8" placeholder="quantity"/>
+          <input onChange={this.onItemChange}
+                 onKeyUp={this.onKeyUp} type="text" id="item" placeholder="Type something to buy"/>
+          <input onChange={this.onQuantityChange}
+                 onKeyUp={this.onKeyUp} type="text" id="quantity" size="8" placeholder="quantity"/>
           <button onClick={()=> this.props.onAddItem(this.state.item.trim(), this.state.quantity.trim())}
                   disabled={this.state.item.trim() === ''}
                   id="add">Add item</button>
