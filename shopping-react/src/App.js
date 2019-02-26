@@ -13,6 +13,14 @@ class App extends Component {
 
     this.onAddItem = this.onAddItem.bind(this);
     this.onClearList = this.onClearList.bind(this);
+    this.onDeleteItem = this.onDeleteItem.bind(this);
+  }
+
+  onDeleteItem(index){
+    this.setState((prevState)=> {
+      prevState.items.splice(index, 1);
+      return {items: prevState.items};
+    });
   }
 
   onClearList(){
@@ -31,7 +39,8 @@ class App extends Component {
       <>
         <ItemInput onAddItem={this.onAddItem}/>
         <ClearList onClearList={this.onClearList}/>
-        <ShoppingList items={this.state.items}/>
+        <ShoppingList items={this.state.items} onDeleteItem={this.onDeleteItem}/>
+
       </>
     );
   }
