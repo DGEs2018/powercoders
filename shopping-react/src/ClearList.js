@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 class ClearList extends Component {
   render() {
-    return <p>ClearList</p>;
+    return <button onClick={this.props.onClearList}>Clear list</button>
   }
 }
 
